@@ -11,7 +11,7 @@ This project is a modern take on the classic Snake game, built with Rust for per
 1. Ensure you have Rust and Cargo installed on your system.
 2. Clone this repository:
    ```
-   git clone https://github.com/yourusername/rust-snake-game.git
+   git clone https://github.com/v8v88v8v88/Rusty-Snake.git
    ```
 3. Navigate to the project directory:
    ```
