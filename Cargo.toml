@@ -1,0 +1,9 @@
+[package]
+name = "snake_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+piston_window = "0.132.0"
+rand = "0.8.5"
+find_folder = "0.3"
