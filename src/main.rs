@@ -118,6 +118,7 @@ impl Game {
 
     fn restart(&mut self) {
         *self = Game::new();
+        self.game_started = false;  // Ensure the game doesn't start immediately after restart
     }
 }
 
@@ -139,7 +140,11 @@ fn main() {
 
     while let Some(e) = events.next(&mut window) {
         if let Some(Button::Keyboard(key)) = e.press_args() {
-            if !game.game_over {
+            if game.game_over {
+                if key == Key::Return {
+                    game.restart();
+                }
+            } else {
                 match key {
                     Key::Right if game.snake.direction != Direction::Left => {
                         game.snake.direction = Direction::Right;
